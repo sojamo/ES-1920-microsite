@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>p5.js template | index</title>
+
+    <!-- load style sheets -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/landing.css">
+
+
+  </head>
+  <body>
+		<div class='container'>
+			<header>
+				<ul class='menu'>
+				<li><a href='./index.html'>index</a></li>
+				<li><a href='./fullscreen.html'>fullscreen</a></li>
+				<li><a href='./process.html'>process</a></li>
+        <li><a href='./gallery.html'>gallery</a></li>
+        <li><a href='./video.html'>video</a></li>
+				</ul>
+      </header>
+      
+        <div id="landing">
+          <div class="overlay"><h2>Vertex Cylinder C</h2></div>
+          <span id="down">&#8595;</span>
+        </div>
+        <div id="project-info">
+          <h2>Project Description</h2>
+          <p>Eaque ipsam necessitatibus optio voluptatem ratione reiciendis voluptatem nemo. Dolorem iste eum cupiditate molestias alias. Voluptate quis ut veniam quia tenetur quos vero est. Quia minima iure ut enim necessitatibus corporis dolorem deserunt. Illum quia ipsum fugiat aspernatur. Ad qui quo eveniet odio beatae.</p>
+          <p>Have a look at my <a href="#" target="_blank">process log</a>, my <a href="#" target="_blank">p5js sketches</a>, and <a href="#" target="_blank">github</a> repo.
+          </p>
+        </div>
+      
+      <footer>
+        <p>A project by Foo Bar.<br />2020</p>
+      </footer>
+		</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
+
+      $(document).ready( function () {
+        $('#down').on('click',function () {
+          $("html").scrollTop(0);
+          $('html, body').animate({
+            scrollTop: $("#project-info").offset().top
+          }, 1000);
+        });
+      });
+    </script>
+  </body>
+</html>

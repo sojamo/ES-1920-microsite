@@ -1,0 +1,80 @@
+
+/* index / landing page */
+#landing {
+    width:100%;
+    height:100vh;
+    background-image: url(../assets/vcc-9.png);
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      justify-content: center;
+      margin-bottom: 30px;
+  }
+  
+  #landing .overlay {
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    z-index:100;
+    background-image: transparent;
+  }
+  
+  #landing .overlay h2 {
+    font-size: 16vmin;
+    line-height: 1em;
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-weight:700;
+    text-transform: uppercase;
+    color:rgb(0,0,0,1);
+    width:100%;
+    padding:0 10%;
+    height:100vh;
+    text-align: center;
+    display:table-cell;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+  
+  #down {
+   position: absolute;
+   top:85vh;
+   padding: 20px;
+   font-size: 2.5em;
+   z-index:1200;
+  }
+  
+  #down:hover {
+   cursor: pointer;
+   background-color: #eee;
+   opacity: 0.8;
+  }
+  
+  #project-info {
+    padding:100px 2%;
+    width:95%;
+    margin: auto;
+  }
+  
+  #project-info h2, 
+  #project-info p, 
+  #project-info p a {
+    font-size: 4.0vmin;
+    line-height: 1.25em;
+    text-align:left;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 100;
+    color:rgb(0,0,0,1);
+    margin-top:1.0em;
+  }
+  
+  #project-info h2 {
+    font-size: 3.0vmin;
+    font-weight: 700;
+  }
+
+  #project-info p a {
+    text-decoration: none;
+    border-bottom:black solid 1px;
+  }

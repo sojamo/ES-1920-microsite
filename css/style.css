@@ -1,0 +1,89 @@
+/* Import fonts first 
+ * more fonts at https://fonts.google.com 
+ */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,700|Roboto:300,400,700|IBM+Plex+Serif:300,400,700|Montserrat:300,400,700');
+
+/* page style */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size:16px;
+}
+
+.container {
+  margin:0;
+}
+
+.fullscreen {}
+
+.sketch {
+  margin:0;
+  margin-bottom:50px;
+  text-align:center;
+  padding: 20px;
+}
+
+
+/* header menu */
+
+header {
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:transparent;
+  width:100%;
+  padding:10px;
+  text-align: center;
+  z-index:1000;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin:auto;
+}
+
+ul.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+ul.menu li a {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 1.5vmin;
+  font-weight: 400;
+  letter-spacing:2px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,1);
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+ul.menu li a:hover {
+  color: rgba(0,0,0,1);
+  border-bottom: 3px solid rgba(0,0,0,1);
+}
+
+/* footer */
+
+footer {
+  clear: both;
+  margin:0;
+  height:100px;
+  padding:4% 20%;
+  background-color: rgb(255,255,255,1);
+}
+
+footer p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color:#333;
+  line-height:1.25em;
+  text-align:center;
+  padding-top:20px;
+  border-top:1px solid #000;
+}
+
